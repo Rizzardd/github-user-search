@@ -10,24 +10,54 @@
     <section class="main-section">
       <div class="header">
         <p>devfinder</p>
-       <div>
-        <button>light</button>
-        <img src="./assets/icon-sun.svg" alt="icon sun" />
-       </div>
+        <div>
+          <button>light</button>
+          <img src="./assets/icon-sun.svg" alt="icon sun" />
+        </div>
       </div>
-      
+
       <main>
-        <form class="search-container"">
-            <img src="./assets/icon-search.svg"  alt="Search icon" />
-            <input
-              type="text"
-              placeholder="Search GitHub username..."
-              name="GitHub Username"
-              id="github-username"
-            />
-            
-            <button type="submit">Search</button>
-          </form>
+        <form class="search-container">
+          <img src="./assets/icon-search.svg" alt="Search icon" />
+          <input
+            type="text"
+            placeholder="Search GitHub username..."
+            name="GitHub Username"
+            id="github-username"
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <section class="user-section">
+          <img
+            src="./assets/image-user-placeholder.png"
+            alt="User profile image"
+          />
+
+          <div class="user-main">
+            <div id="user-info">
+              <h1>Name</h1>
+              <p>Joined...</p>
+            </div>
+            <h3>@Username</h3>
+            <p>this profile has no bio</p>
+          <ul class="user-status">
+            <li>
+              <h4>Repos</h4>
+              <h2 id="user-repos">4</h2>
+            </li>
+            <li>
+              <h4>Followers</h4>
+              <h2 id="user-followers">4</h2>
+            </li>
+            <li>
+              <h4>Following</h4>
+              <h2 id="user-following">4</h2>
+            </li>
+          </ul>
+          </div>
+
+        </section>
       </main>
     </section>
   </body>

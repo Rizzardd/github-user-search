@@ -52,6 +52,8 @@ body {
 
 main {
   display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .search-container {
@@ -92,3 +94,94 @@ main {
     color: white;
 }
 
+.user-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 15px;
+    width: 38vw;
+    padding: 30px 2%  7px 5%;
+    background-color: rgb(31, 42, 72);
+    
+}
+
+.user-section img {
+    margin-right: 36px;
+    border-radius: 50%;
+    width: 16%;
+    margin-top: 20px;
+    
+}
+
+.user-main {
+    width: 70%;
+    display: flex;
+    font-family: 'Space Mono';
+    padding: 0 2.5%;
+    padding-right: 5%;
+    flex-direction: column;
+}
+
+
+.user-section h1 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0;
+   
+}
+
+#user-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+#user-info p {
+  color: rgb(208, 210, 216);
+  font-size: 15px;
+  height: fit-content;
+  margin: 20px 0;
+  margin-bottom: 0;
+}
+
+.user-main h3 {
+  color: rgb(1, 116, 243);
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  
+  
+}
+
+.user-main p {
+ color: rgb(166, 171, 184);
+ font-weight: 400;
+}
+
+.user-status {
+  display: grid;
+  background-color: rgb(20, 28, 47);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 32px;
+  border-radius: 10px;
+  
+  list-style: none;
+  color: white;
+}
+
+.user-status h4 {
+  margin-bottom: 1;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-status h2 {
+  margin-bottom: 1;
+  font-size: 27px;
+  font-weight: 700;
+}
