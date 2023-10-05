@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Space Mono", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+}
+
+body {
+  background-color: rgb(20, 28, 47);
+}
+
+* :focus {
+  outline: none;
+}
+
+.main-section {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  color: white;
+  gap: 28vw;
+  align-items: center;
+}
+
+.header p {
+  width: fit-content;
+  font-family: "Space Mono";
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.header div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2.5px;
+  gap: 20px;
+}
+.header div button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: "Space Mono";
+  color: var(--txt-low-contrast);
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  padding: 0;
+  color: white;
+  border: 0;
+}
+
+main {
+  display: flex;
+}
+
+.search-container {
+  display: flex;
+  background-color: rgb(31, 42, 72);
+  width: 38vw;
+  border-radius: 15px;
+  gap: 1vw;
+  padding: 7px 2%  7px 5%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search-container img {
+  width: 1.3vw;
+  height: 1.3vw;
+  
+}
+
+.search-container input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  padding: 7px 0;
+  color: rgb(219, 220, 225);
+  font-family: "Space Mono";
+  font-size: 17px;
+}
+
+.search-container button {
+    background-color: rgb(0, 121, 254);
+    border: 0;
+    font-family: 'Space Mono';
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 16px 25px;
+    color: white;
+}
+
