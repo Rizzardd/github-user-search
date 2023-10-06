@@ -188,8 +188,6 @@ main {
   gap: 12px;
   grid-template-columns: auto auto;
 }
-.user-social div {
-}
 
 .location {
   display: flex;
