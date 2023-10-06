@@ -12,7 +12,8 @@
         <p>devfinder</p>
         <div>
           <button>light</button>
-          <img src="./assets/icon-sun.svg" alt="icon sun" />
+          <img src="./assets/icon-sun.svg" alt="icon sun" id="sun"/>
+          <img src="./assets/icon-moon.svg" alt="icon moon" id="moon">
         </div>
       </div>
 
@@ -32,18 +33,19 @@
           <img
             src="./assets/image-user-placeholder.png"
             alt="User profile image"
+            id="user-img"
           />
 
           <div class="user-main">
             <div id="user-info">
-              <h1>Name</h1>
-              <p>Joined...</p>
+              <h1 id="user-name">Name</h1>
+              <p id="user-joined-time">Joined...</p>
             </div>
-            <h3>@Username</h3>
-            <p>this profile has no bio</p>
+            <h3 id="user-username">@Username</h3>
+            <p id="user-bio">this profile has no bio</p>
             <ul class="user-status">
               <li>
-                <h4>Repos</h4>
+                <h4 id="user-repos">Repos</h4>
                 <h2 id="user-repos">4</h2>
               </li>
               <li>
@@ -57,22 +59,22 @@
             </ul>
 
             <div class="user-social">
-              <div class="location">
+              <div class="location" id="user-location">
                 <img src="./assets/icon-location.svg" alt="icon location" />
                 <p>San Francisco</p>
               </div>
 
-              <div class="twitter">
+              <div class="twitter" id="user-twitter">
                 <img src="./assets/icon-twitter.svg" alt="icon twitter" />
                 <p>Not Available</p>
               </div>
              
 
-              <div class="link">
+              <div class="link" id="user-website">
                 <img src="./assets/icon-website.svg" alt="icon website" />
                 <p>http:optmusprime.com</p>
               </div>
-              <div class="company">
+              <div class="company" id="user-organization">
                 <img src="./assets/icon-company.svg" alt="icon company" />
                 <p>algo ai</p>
               </div>
