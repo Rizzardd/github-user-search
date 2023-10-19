@@ -263,3 +263,22 @@ main {
   margin: 0;
   font-size: 14px;
 }
+
+@media (max-width: 650px) {
+  .header {
+    gap: 19vw;
+  }
+
+  .search-container {
+    width: 82vw;
+  }
+
+  .user-section {
+    width: 82vw;
+  }
+
+  #user-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
