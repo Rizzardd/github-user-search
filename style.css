@@ -311,6 +311,7 @@ flex-grow: 1;
   gap: 4vw;
 }
 
+<<<<<<< HEAD
 .user-status li {
   list-style: none;
 }
@@ -411,5 +412,28 @@ row-gap: 18px;
   .user-links {
     grid-template-columns: 1fr;
     row-gap: 16px;
+=======
+.company p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .header {
+    gap: 19vw;
+  }
+
+  .search-container {
+    width: 82vw;
+  }
+
+  .user-section {
+    width: 82vw;
+  }
+
+  #user-info {
+    display: flex;
+    flex-direction: column;
+>>>>>>> 7f77304c5e5b922d969ba78b623d69d688c93136
   }
 }
