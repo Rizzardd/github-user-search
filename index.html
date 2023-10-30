@@ -5,84 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github User Search</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="base.css">
   </head>
   <body>
-    <section class="main-section">
-      <div class="header">
-        <p>devfinder</p>
-        <div>
-          <button  id="theme-switch-text" >light</button>
-          <img src="./assets/icon-sun.svg" alt="icon sun" id="sun"/>
-          <img src="./assets/icon-moon.svg" alt="icon moon" id="moon">
-        </div>
-      </div>
+    <section>
+      <!-- Header Begin -->
+      <header>
+        <p class="header-logo">devfinder</p>
+        <button class="header-theme-switch-btn btn body-s">
+          <span id="theme-switch-text">Dark</span>
+          <img
+            src="/assets/icon-sun.svg"
+            class="header-theme-icon"
+            alt="icon sun"
+            id="icon-sun"
+          />
+          <img
+            src="/assets/icon-moon.svg"
+            class="header-theme-icon hidden"
+            alt="icon moon"
+            id="icon-moon"
+          />
+        </button>
+      </header>
+      <!-- Header End -->
 
       <main>
-        <form class="search-container">
-          <img src="./assets/icon-search.svg" alt="Search icon" />
+        <!-- search bar Begin -->
+        <form action="" class="search-container">
+          <img src="/assets/icon-search.svg" alt="icon search" />
           <input
             type="text"
-            placeholder="Search GitHub username..."
-            name="GitHub Username"
+            class="search-input"
+            name="Github Username"
             id="github-username"
           />
-          <button type="submit">Search</button>
+          <p class="search-error hidden" id="search-error">No results</p>
+          <p class="search-error hidden" id="empty-field">Empty Field</p>
+          <button class="btn btn-user-search" type="submit">Search</button>
         </form>
+        <!-- search bar end -->
 
+        <!-- user section Begin -->
         <section class="user-section">
           <img
-            src="./assets/image-user-placeholder.png"
-            alt="User profile image"
-            id="user-img"
+            src="/assets/image-user-placeholder.png"
+            alt="user profile image"
+            class="user-img"
+            id="user-profile-img"
           />
-
           <div class="user-main">
-            <div id="user-info">
+            <div class="user-top">
+              <img
+                src="/assets/image-user-placeholder.png"
+                class="user-img"
+                id="user-img-mobile"
+                alt="User profile image"
+              />
               <h1 id="user-name">Name</h1>
-              <p id="user-joined-time">Joined...</p>
+              <div id="user-joined-time">Joined ...</div>
+              <h3 id="user-username">@Username</h3>
             </div>
-            <h3 id="user-username">@Username</h3>
-            <p id="user-bio">this profile has no bio</p>
+            <p class="user-bio" id="user-bio">User bio...</p>
             <ul class="user-status">
               <li>
-                <h4 id="user-repos">Repos</h4>
-                <h2 id="user-repos">4</h2>
+                <h4>Repos</h4>
+                <h2 id="user-repos">...</h2>
               </li>
               <li>
                 <h4>Followers</h4>
-                <h2 id="user-followers">4</h2>
+                <h2 id="user-followers">...</h2>
               </li>
               <li>
                 <h4>Following</h4>
-                <h2 id="user-following">4</h2>
+                <h2 id="user-following">...</h2>
               </li>
             </ul>
-
-            <div class="user-social">
-              <div class="location" id="user-location">
-                <img src="./assets/icon-location.svg" alt="icon location" />
-                <p>San Francisco</p>
+            <section class="user-infos">
+              <div class="user-link-container" id="user-location">
+                <img
+                  src="/assets/icon-location.svg"
+                  class="user-link-icon"
+                  alt="icon location"
+                />
+                <span class="user-link">Location...</span>
               </div>
-
-              <div class="twitter" id="user-twitter">
-                <img src="./assets/icon-twitter.svg" alt="icon twitter" />
-                <p>Not Available</p>
+              <div class="user-link-container" id="user-twitter">
+                <img
+                  src="/assets/icon-twitter.svg"
+                  class="user-link-icon"
+                  alt=""
+                />
+                <a
+                  href=""
+                  class="body user-link"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Twitter...</a
+                >
               </div>
-             
-
-              <div class="link" id="user-website">
-                <img src="./assets/icon-website.svg" alt="icon website" />
-                <p>http:optmusprime.com</p>
+              <div class="user-link-container" id="user-website">
+                <img src="/assets/icon-website.svg" class="user-link-icon" alt="icon website">
+                <a href="" class="body user-link" target="_blank" rel="noreferrer">Website...</a>
               </div>
-              <div class="company" id="user-organization">
-                <img src="./assets/icon-company.svg" alt="icon company" />
-                <p>algo ai</p>
+              <div class="user-link-container" id="user-organization">
+                <img src="/assets/icon-company.svg" alt="icon company">
+                <a href="" class="body user-link" target="_blank" rel="noreferrer">Organization...</a>
               </div>
-            </div>
+            </section>
           </div>
         </section>
+        <!-- user section end -->
       </main>
     </section>
+
     <script src="./index.js"></script>
   </body>
 </html>
