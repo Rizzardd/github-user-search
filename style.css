@@ -386,7 +386,44 @@ body.dark-theme .user-section {
 }
 
 @media (max-width: 840px) {
-  #user-img {
+  header {
+    width: 90vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+  }
+
+.user-main {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+}
+
+  .search-container img {
+    width: 5vw;
+  }
+
+  .btn-user-search {
+    width: fit-content;
+    font-size: 14px;
+    padding: 12px 20px;
+    margin-right: 5vw;
+  }
+
+  .search-container {
+    width: 90vw;
+    margin: 5vw auto;
+  }
+
+  .search-input {
+    margin: 0;
+    flex-shrink: 1;
+  }
+
+  #user-profile-img {
     display: none;
   }
 
@@ -400,8 +437,29 @@ body.dark-theme .user-section {
     justify-content: flex-start;
     grid-template-rows: repeat(3, auto);
     row-gap: 0;
+    width: 90%;
+  }
+  .user-top h1 {
+    font-size: 18px;
   }
 
+
+  #user-joined-time {
+    order: 2;
+    font-size: 14px;
+  }
+
+  #user-username {
+    order: 1;
+    font-size: 14px;
+
+  }
+
+  .user-top img {
+    width: 18vw;
+    height: 18vw;
+  }
+  
   .user-username {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -409,6 +467,8 @@ body.dark-theme .user-section {
 
   .user-name {
     align-self: flex-end;
+    font-size: 2px;
+    order: 0;
   }
 
   .user-joined {
@@ -416,40 +476,48 @@ body.dark-theme .user-section {
   }
 
   .user-section {
-    padding: 40px;
+    padding: 7px;
+    width: 90vw;
+    margin: 0 auto;
   }
 
   .user-bio {
     margin-top: 24px;
-  }
-
-  .user-stats {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 650px) {
-  .user-section {
-    padding: 32px 24px;
-  }
-
-  .user-img {
-    margin-right: 20px;
-    height: 70px;
-    width: 70px;
-  }
-
-  .user-bio {
-    margin: 32px 0 24px 0;
+    width: 90%;
   }
 
   .user-status {
-    margin-bottom: 24px;
-    padding: 18px 24px;
+    width: 80%;
+    height: fit-content;
+    padding: 5%;
   }
 
-  .user-links {
-    grid-template-columns: 1fr;
-    row-gap: 16px;
+  .dark-theme {
+    align-items: start;
   }
+
+  .user-infos {
+    grid-template-columns: auto;
+    align-self: flex-start;
+    margin-right: 10vw;
+    padding-left: 5%;
+    margin-bottom: 5vw;
+   
+  }
+
+  .user-status {
+    margin: 0;
+    padding: 18px 24px;
+   margin-bottom: 24px;
+  }
+
+
+
+ .user-status h4 {
+  font-size: 12px;
+ }
+
+ .user-status h2 {
+  font-size: 16px;
+ }
 }
